@@ -11,8 +11,7 @@ loop do
     break
   end
 
-  numbers << number.to_i
-
+  numbers << number.to_f
 end
 
 total = 0
@@ -24,7 +23,8 @@ loop do
   if count >= numbers.length
     break
   end
-
 end
 
-puts "The sum total of your numbers are #{numbers}. The average is #{numbers}."
+avg = total / (numbers.length)
+
+puts "The sum total of your numbers are #{total}. The average is #{avg}."
